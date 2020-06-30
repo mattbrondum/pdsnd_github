@@ -19,3 +19,4 @@ bikeshare_2.py
 ### Credits
 s/o to mom
 s/o to [Sakib Alam](https://github.com/sa0000)
+s/o to Kyle C for his moral support!
