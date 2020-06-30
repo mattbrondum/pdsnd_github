@@ -2,6 +2,8 @@ import time
 import pandas as pd
 import numpy as np
 
+# Note: script currently only includes cities in CITY_DATA dictionary
+# if more cities need to be added, just add them to the dictionary below
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -19,7 +21,7 @@ def get_filters():
     print('Filtering data...')
 
     # If the user enters more than 10 wrong inputs, exit the script
-    wrong_counter = 0
+    wrong_count = 0
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     valid_cities = ['all', 'chicago', 'new york city', 'washington']
@@ -29,8 +31,8 @@ def get_filters():
         if city in valid_cities:
             break
         else:
-            wrong_counter += 1
-            if wrong_counter > 10:
+            wrong_count += 1
+            if wrong_count > 5:
                 print('Program ending after 10 bad inputs!')
                 exit()
             print('Sorry I didn\'t like that city name! Try `Chicago` for example.')
@@ -44,8 +46,8 @@ def get_filters():
         if (month in valid_months) or (month in valid_months_abbr):
             break
         else:
-            wrong_counter += 1
-            if wrong_counter > 10:
+            wrong_count += 1
+            if wrong_count > 5:
                 print('Program ending after 10 bad inputs!')
                 exit()
             print('Sorry I didn\'t like that month! Try `February` for example.')
@@ -63,8 +65,8 @@ def get_filters():
             day = day + 'day'
             break
         else:
-            wrong_counter += 1
-            if wrong_counter > 10:
+            wrong_count += 1
+            if wrong_count > 5:
                 print('Program ending after 10 bad inputs!')
                 exit()
             print('Sorry I didn\'t like that day of week! Try `Sunday` for example.')
