@@ -1,15 +1,21 @@
-### Date created
-Include the date you created this project and README file.
+## Author
+Matt Brondum
+
+### Date Created
+June 30, 2020
 
 ### Project Title
-Replace the Project Title
+Udacity Bikeshare Analysis
 
 ### Description
-Describe what your project is about and what it does
+This allows users to quickly gather descriptive statistics about bikeshare data. 
+We cover Chicago, Washington DC and New York city. 
+User inputs a city, month and day of week.
+User receives a list of descriptive statistics and the ability to see raw data samples.
 
 ### Files used
-Include the files used
+bikeshare_2.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+s/o to mom
+s/o to [Sakib Alam](https://github.com/sa0000)
