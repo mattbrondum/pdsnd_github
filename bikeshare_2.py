@@ -2,6 +2,8 @@ import time
 import pandas as pd
 import numpy as np
 
+# Note: script currently only includes cities in CITY_DATA dictionary
+# if more cities need to be added, just add them to the dictionary below
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
